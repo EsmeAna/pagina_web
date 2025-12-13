@@ -1,0 +1,65 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial;
+}
+
+body {
+  background: #f7f7fb;
+  color: #111;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  max-width: 720px;
+  width: 100%;
+  padding: 28px;
+  box-shadow: 0 6px 18px rgba(15, 20, 30, 0.06);
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+header p {
+  margin: 0;
+  color: #555;
+}
+
+section {
+  margin-top: 18px;
+}
+
+.meta {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.meta div {
+  background: #f1f5f9;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 22px;
+  color: #666;
+  font-size: 14px;
+}
+
+.foto {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 16px;
+}

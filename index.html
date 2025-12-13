@@ -4,30 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Presentación — Anallely Esmeralda Perz Sanchez</title>
-  <style>
-    :root{font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;}
-    body{background:#f7f7fb;color:#111;margin:0;padding:24px;display:flex;align-items:center;justify-content:center;min-height:100vh}
-    .card{background:white;border-radius:12px;max-width:720px;width:100%;padding:28px;box-shadow:0 6px 18px rgba(15,20,30,0.06)}
-    header h1{margin:0 0 6px;font-size:28px}
-    header p{margin:0;color:#555}
-    section{margin-top:18px}
-    .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px}
-    .meta div{background:#f1f5f9;padding:10px 12px;border-radius:8px}
-    footer{margin-top:22px;color:#666;font-size:14px}
-  </style>
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <article class="card" aria-labelledby="titulo-presentacion">
+
     <header>
-      <img src="./mi-foto.jpg" alt="Foto de Anallely Esmeralda Perz Sanchez" style="width:150px;height:auto;border-radius:50%;display:block;margin-bottom:16px;">
+      <img 
+        src="mi-foto.jpg" 
+        alt="Foto de Anallely Esmeralda Perz Sanchez" 
+        class="foto"
+      >
       <h1 id="titulo-presentacion">Anallely Esmeralda Perz Sanchez</h1>
-      <p>Hola — esta es mi presentación personal.</p>
+      <p>Hola, esta es mi presentación personal.</p>
     </header>
 
     <main>
       <section>
         <h2>Sobre mí</h2>
-        <p>Tengo 25 años y estudio en la <strong>UPTREP</strong>, ubicada en Hueyotlipan, Tlaxcala.</p>
+        <p>
+          Tengo 25 años y estudio en la <strong>UPTREP</strong>, ubicada en
+          Hueyotlipan, Tlaxcala.
+        </p>
       </section>
 
       <section class="meta" aria-label="datos personales">
@@ -37,32 +38,42 @@
         <div><strong>Ubicación:</strong> Hueyotlipan, Tlaxcala</div>
       </section>
 
-      <section style="margin-top:18px">
-        <h3>Contacto (ejemplo)</h3>
-        <p>Puedes añadir aquí un correo, redes o un enlace a tu repositorio de GitHub.</p>
-        <p>Ejemplo de enlace: <a href="#" rel="noopener" target="_blank">Mi repositorio en GitHub</a></p>
+      <section>
+        <h3>Contacto</h3>
+        <p>
+          Puedes visitar mi repositorio de GitHub en el siguiente enlace:
+        </p>
+        <p>
+          <a href="#" target="_blank" rel="noopener">
+            Mi repositorio en GitHub
+          </a>
+        </p>
       </section>
 
       <section>
         <h2>Formulario de contacto</h2>
-        <form action="#" method="post" style="margin-top:12px;display:flex;flex-direction:column;gap:12px;max-width:420px;">
+        <form action="#" method="post">
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required style="padding:8px;border:1px solid #ccc;border-radius:6px;">
+          <input type="text" id="nombre" name="nombre" required>
 
           <label for="correo">Correo electrónico:</label>
-          <input type="email" id="correo" name="correo" required style="padding:8px;border:1px solid #ccc;border-radius:6px;">
+          <input type="email" id="correo" name="correo" required>
 
           <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required style="padding:8px;border:1px solid #ccc;border-radius:6px;"></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-          <button type="submit" style="padding:10px 14px;border:none;border-radius:8px;background:#4a6cf7;color:white;font-size:15px;cursor:pointer;">Enviar</button>
+          <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <p lang="es">Archivo básico HTML creado para la entrega del proyecto. Puedes editar el contenido y agregar imágenes o más secciones según necesites.</p>
+      <p>
+        Página web básica creada para la práctica de HTML y CSS y su publicación
+        en GitHub Pages.
+      </p>
     </footer>
+
   </article>
 </body>
 </html>
