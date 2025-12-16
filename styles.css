@@ -135,3 +135,63 @@ footer {
   font-size: 14px;
   text-align: center;
 }
+
+/* ===============================
+   HERENCIA (ejemplo explícito)
+   =============================== */
+
+/* Estas propiedades se heredan desde body */
+.card {
+  font-family: inherit;   /* hereda la fuente */
+  color: inherit;         /* hereda el color */
+}
+
+/* ===============================
+   FUENTES (todos sus elementos)
+   =============================== */
+
+header h1 {
+  font-weight: 700;       /* peso de fuente */
+  line-height: 1.2;       /* altura de línea */
+}
+
+section {
+  line-height: 1.6;       /* mejora legibilidad */
+}
+
+.meta div {
+  font-weight: 500;
+}
+
+/* ===============================
+   ESPECIFICIDAD (ejemplo claro)
+   =============================== */
+
+/* Regla general */
+p {
+  color: #8a4f6a;
+}
+
+/* Más específica: gana sobre la anterior */
+section p {
+  color: #6b2d4d;
+}
+
+/* Aún más específica: esta se aplica */
+.card section p {
+  color: #4a2c3a;
+}
+
+/* ===============================
+   ESPECIFICIDAD + PSEUDOCLASE
+   =============================== */
+
+/* Regla normal */
+button {
+  font-weight: 600;
+}
+
+/* Regla más específica */
+.card button:hover {
+  background-color: #b82c70;
+}
