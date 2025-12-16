@@ -1,65 +1,137 @@
+/* Configuración general */
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial;
+  box-sizing: border-box;
 }
 
+/* Box Model global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Cuerpo */
 body {
-  background: #f7f7fb;
-  color: #111;
+  background-color: #fdecef; /* rosa muy claro */
+  color: #4a2c3a;
   margin: 0;
   padding: 24px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   min-height: 100vh;
+  text-align: center;
+  font-size: 16px;
 }
 
+/* Tarjeta principal */
 .card {
-  background: white;
-  border-radius: 12px;
+  background-color: #ffffff;
+  border-radius: 16px;
   max-width: 720px;
   width: 100%;
+
   padding: 28px;
-  box-shadow: 0 6px 18px rgba(15, 20, 30, 0.06);
+  margin: 0 auto;
+
+  box-shadow: 0 8px 20px rgba(214, 51, 108, 0.15);
 }
 
+/* Encabezado */
 header h1 {
   margin: 0 0 6px;
   font-size: 28px;
+  color: #d63384; /* rosa fuerte */
+  text-align: center;
 }
 
 header p {
   margin: 0;
-  color: #555;
+  color: #8a4f6a;
+  font-size: 16px;
+  text-align: center;
 }
 
+/* Secciones */
 section {
   margin-top: 18px;
+  font-size: 15px;
 }
 
+/* Información personal */
 .meta {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
   margin-top: 12px;
+  justify-content: center;
 }
 
 .meta div {
-  background: #f1f5f9;
-  padding: 10px 12px;
-  border-radius: 8px;
-}
-
-footer {
-  margin-top: 22px;
-  color: #666;
+  background-color: #ffe4ec;
+  padding: 10px 14px;
+  border-radius: 10px;
   font-size: 14px;
+  color: #6b2d4d;
 }
 
+/* Imagen */
 .foto {
   width: 150px;
   height: auto;
   border-radius: 50%;
   display: block;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
+  border: 4px solid #f8b3c8;
+}
+
+/* Formulario */
+form {
+  margin-top: 12px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #6b2d4d;
+  margin-bottom: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+
+  border: 1px solid #f3b6c9;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fffafc;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: #d63384;
+  color: #ffffff;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b82c70;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 22px;
+  color: #8a4f6a;
+  font-size: 14px;
+  text-align: center;
 }
