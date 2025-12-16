@@ -241,3 +241,25 @@ form {
 
   font-size: 12px;
 }
+/* =========================
+   FLEXBOX - ALINEACIÓN
+   ========================= */
+
+.intereses {
+  display: flex;
+  justify-content: space-around; /* alineación horizontal */
+  align-items: center;           /* alineación vertical */
+  gap: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.interes {
+  background-color: #ffe4ec;
+  color: #6b2d4d;
+  padding: 16px;
+  border-radius: 12px;
+  width: 180px;
+  text-align: center;
+  font-size: 14px;
+}
