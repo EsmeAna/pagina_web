@@ -10,9 +10,18 @@
 </head>
 
 <body>
+  <nav class="navbar">
+   <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#mis-intereses">Mis intereses</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+   </ul>
+  </nav>
+
   <article class="card" aria-labelledby="titulo-presentacion">
 
-<header>
+<header id="inicio">
   <img 
     src="mi-foto.jpg" 
     alt="Foto de Anallely Esmeralda Perez Sanchez" 
@@ -27,7 +36,7 @@
 
 
     <main>
-      <section>
+      <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <p>
           Tengo 25 años y estudio en la <strong>UPTREP</strong>, ubicada en
@@ -42,7 +51,7 @@
         <div><strong>Ubicación:</strong> Hueyotlipan, Tlaxcala</div>
       </section>
 
-      <section>
+      <section id="mis-intereses">
         <h2>Mis intereses</h2>
         <div class="intereses">
         <div class="interes">💻 Desarrollo Web</div>
@@ -51,7 +60,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="contacto">
         <h3>Contacto</h3>
         <p>
           Puedes visitar mi repositorio de GitHub en el siguiente enlace:
@@ -82,12 +91,10 @@
       </section>
     </main>
 
-    <footer>
-      <p>
-        Página web básica creada para la práctica de HTML y CSS y su publicación
-        en GitHub Pages.
-      </p>
-    </footer>
+   <footer class="footer">
+     <p>© 2025 · Anallely Esmeralda Perez Sanchez · UPTREP</p>
+   </footer>
+
 
   </article>
 </body>

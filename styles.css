@@ -263,3 +263,82 @@ form {
   text-align: center;
   font-size: 14px;
 }
+/* =========================
+   NAVBAR (position + UX)
+   ========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d63384;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Separación por navbar fija */
+body {
+  padding-top: 70px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+  margin-top: 40px;
+  padding: 16px;
+  background-color: #ffe4ec;
+  text-align: center;
+  font-size: 14px;
+  color: #6b2d4d;
+}
+
+/* =========================
+   POSITION + Z-INDEX
+   ========================= */
+
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ya usas position absolute en .badge */
+
+/* =========================
+   RESPONSIVE (modelo responsivo)
+   ========================= */
+
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meta {
+    flex-direction: column;
+  }
+
+  .intereses {
+    flex-direction: column;
+  }
+}
