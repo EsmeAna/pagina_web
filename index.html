@@ -10,14 +10,19 @@
 </head>
 
 <body>
-  <nav class="navbar">
-   <ul>
+<nav class="navbar">
+  <button onclick="abrirMenu()" class="btn-menu">☰ Menú</button>
+
+  <ul class="menu-links" id="menuLinks">
     <li><a href="#inicio">Inicio</a></li>
     <li><a href="#sobre-mi">Sobre mí</a></li>
     <li><a href="#mis-intereses">Mis intereses</a></li>
     <li><a href="#contacto">Contacto</a></li>
-   </ul>
-  </nav>
+  </ul>
+
+  <button class="btn-cerrar" onclick="cerrarMenu()">✖</button>
+</nav>
+
 
   <article class="card" aria-labelledby="titulo-presentacion">
 
@@ -86,7 +91,14 @@
           <label for="mensaje">Mensaje:</label>
           <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
+          <div class="botones">
+
+        
           <button type="submit">Enviar</button>
+
+          <button onclick="mostrarMensaje()">Haz clic aquí</button>
+
+            </div>
         </form>
       </section>
     </main>
@@ -97,5 +109,8 @@
 
 
   </article>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
